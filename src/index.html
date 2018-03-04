@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./reset.less">
     <link rel="stylesheet" type="text/css" href="./styles.less">
     <script async src="./tabs.js"></script>
     <script async src="./mobileMenu.js"></script>
@@ -16,7 +19,8 @@
 <header>
     <ul class="header-menu">
         <li><a href="#"><img src="images/roshe.png"></a></li>
-        <li><a href="#"><span><input type= "search" class="search" placeholder="search"></span><img src="./images/search.png"></a></li>
+        <li><a href="#"><span><input type="search" class="search" placeholder="search"></span><img
+                src="./images/search.png"></a></li>
         <li><a href="#"><span>My Account</span><img src="./images/users.png"></a></li>
         <li><a href="#"><span>EN</span><img src="./images/list.png"></a></li>
     </ul>
@@ -24,7 +28,7 @@
 <nav>
     <ul class="menu">
         <li><a href="#">Downloads</a>
-            <ul class="sub-menu">
+            <ul class="sub-menu animated zoomIn">
                 <li><a href="#">books amet beatae</a></li>
                 <li><a href="#">magazines </a></li>
                 <li><a href="#">science cum dignissimos</a></li>
@@ -32,28 +36,28 @@
             </ul>
         </li>
         <li><a href="#">Program</a>
-            <ul class="sub-menu">
+            <ul class="sub-menu animated zoomIn">
                 <li><a href="#">science voluptate voluptatem</a></li>
                 <li><a href="#">nature</a></li>
                 <li><a href="#">culture</a></li>
             </ul>
         </li>
         <li><a href="#">Community</a>
-            <ul class="sub-menu">
+            <ul class="sub-menu animated zoomIn">
                 <li><a href="#">forum consectetur adipisicing</a></li>
                 <li><a href="#">statistic</a></li>
                 <li><a href="#">about repellendus voluptatibus</a></li>
             </ul>
         </li>
         <li><a href="#">Documents</a>
-            <ul class="sub-menu">
+            <ul class="sub-menu animated zoomIn">
                 <li><a href="#">.doc</a></li>
                 <li><a href="#">.pdf</a></li>
                 <!--<li><a href="#">another</a></li>-->
             </ul>
         </li>
         <li><a href="#">Our Company</a>
-            <ul class="sub-menu">
+            <ul class="sub-menu animated zoomIn">
                 <li><a href="#">contact us</a></li>
                 <li><a href="#">about sit amet</a></li>
                 <li><a href="#">storelocator</a></li>
@@ -63,7 +67,7 @@
     </ul>
 </nav>
 <div class="tabs-container">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
     <ul>
         <li><a href="#">tab 1 </a></li>
         <li><a href="#">tab 2 </a></li>
@@ -94,17 +98,72 @@
 <div class="modal-container">
     <button>Open Modal</button>
     <!-- The Modal -->
-    <div class="modal">
+    <div class="modal animated zoomIn">
         <div class="modal-header">
             <span>&times;</span>
         </div>
         <div class="modal-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores id illo incidunt laborum maiores obcaecati velit. A aliquam doloribus nihil nobis placeat quae quo sequi, voluptatum. Expedita, optio praesentium.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores id illo incidunt laborum maiores
+                obcaecati velit. A aliquam doloribus nihil nobis placeat quae quo sequi, voluptatum. Expedita, optio
+                praesentium.</p>
             <img src="https://www.sessions.edu/wp-content/uploads/low-poly-character-dinges.jpg">
             <a href="#">Move to homepage</a>
             <a href="#" data-action="continue-shopping">Continue shopping</a>
         </div>
     </div>
 </div>
+<section class="form"><h1>Test form</h1>
+    <form>
+        <div class="fieldset">
+            <p>
+                <label for="sex-male">male</label>
+                <input id="sex-male" type="radio" name="sex" value="male">
+            </p>
+            <p>
+                <label for="sex-female">female</label>
+                <input id="sex-female" type="radio" name="sex" value="female" checked>
+            </p>
+            <p>
+                <label for="name">Name</label><input id="name" type="text" name="name" placeholder="Name" maxlength="10" required>
+            </p>
+            <p>
+                <label for="surname">Surname</label>
+                <input id="surname" type="text" name="surname" placeholder="Surame" maxlength="10" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="john.doe@example.com" required>
+            </p>
+            <p>
+                <label for="date">Birth</label>
+                <input id="date" type="date" name="date" placeholder="date of birth">
+            </p>
+            <p>
+                <label for="phone">Telephone</label>
+                <input id="phone" type="tel" name="phone" placeholder="+380 12 345 67 89">
+            </p>
+            <p>
+                <label for="days">Day</label>
+                <select id="days" name="days">
+                    <option value="Sunday" selected>Sunday</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+            </p>
+            <p>
+                <label for="comment">Comments</label>
+                <textarea id="comment" cols="15" rows="3" name="comment" placeholder="For comments"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Send">
+            </p>
+        </div>
+    </form>
+    <div class="loader"></div>
+</section>
 </body>
 </html>

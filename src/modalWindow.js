@@ -8,7 +8,7 @@ export default function ModalMaster (selector) {
     let self = this;
 
     ModalMaster.prototype.showModalWin = function () {
-        modalWindow.classList.toggle("modal-active");
+        modalWindow.classList.add("modal-active");
 
         if(modalWindow.classList.contains("modal-active")){
             document.body.style.overflow = 'hidden';

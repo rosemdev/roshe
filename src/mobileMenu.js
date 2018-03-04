@@ -12,6 +12,8 @@ export default function MobMenuMaster(selector) {
 
         mobileMenuSwitcher.addEventListener("click", function (event) {
             menuContainer.classList.toggle("mob-main-menu-active");
+            menuContainer.classList.add("animated");
+            menuContainer.classList.add("zoomIn");
             mobileMenuSwitcher.style.backgroundColor = "#5b444b";
         });
 
