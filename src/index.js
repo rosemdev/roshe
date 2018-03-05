@@ -1,6 +1,7 @@
 import MobMenuMaster from "./mobileMenu"
 import TabMaster from "./tabs"
 import ModalMaster from "./modalWindow.js"
+import Carousel from "./slider.js"
 
 
 window.onload = function () {
@@ -15,4 +16,7 @@ window.onload = function () {
 
     let modalWin = new ModalMaster(".modal-container", {
     });
+
+    let MyCarousel = new Carousel(".rosem-carousel");
+    MyCarousel.enable();
 };
