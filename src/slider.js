@@ -29,7 +29,7 @@ Carousel.prototype.enable = function() {
 
         this.arrFunc.push(newFunc);
     }.bind(this));
-}
+};
 
 Carousel.prototype.disableCarousel = function() {
 
@@ -74,7 +74,7 @@ Carousel.prototype.nextSlide = function() {
 
 Carousel.prototype.previousSlide = function() {
     this.showSlideByIndex(this.currentSlideIndex - 1);
-}
+};
 
 MyCarousel = new Carousel(".rosem-carousel");
 console.log(MyCarousel);
