@@ -77,5 +77,4 @@ Carousel.prototype.previousSlide = function() {
 };
 
 MyCarousel = new Carousel(".rosem-carousel");
-console.log(MyCarousel);
 MyCarousel.enable();

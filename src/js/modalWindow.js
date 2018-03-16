@@ -1,6 +1,7 @@
 export default function ModalMaster (selector) {
     
-    const modalContainer = document.querySelector(selector),
+    const
+        modalContainer = document.querySelector(selector),
         openModalBtn = modalContainer.querySelector("button"),
         modalWindow = modalContainer.querySelector(".modal"),
         closeIcon = modalWindow.querySelector(".modal-header > span"),

@@ -3,6 +3,7 @@ import TabMaster from "./tabs"
 import ModalMaster from "./modalWindow.js"
 import Carousel from "./slider.js"
 import Accordion from "./accordion.js"
+import Modal from "./modalWin.js"
 
 
 window.onload = function () {
@@ -26,6 +27,16 @@ window.onload = function () {
         collapsible: true
 
     });
+
+    // let newModal = new Modal();
+    //  newModal.createContent ("<h1>hello!</h1><img src='https://learn.javascript.ru/article/traversing-dom/dom-links.png'><h1>Good bie</h1>");
+    //
+
+        // modal: ".modal",
+        // closeIcon: ".modal-header > span",
+        // openBtn: "button"
+
+
 
 
 };
